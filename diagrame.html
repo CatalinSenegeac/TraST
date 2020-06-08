@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+     <link rel="stylesheet" type="text/css" href="scholarly.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Diagrame</title>
+    <script src="js/scholarly.min.js"></script>
+ </head>
+  <body prefix="schema: http://schema.or">
+   <header>
+    <div class="titlu">
+      <h1> Diagrama use-case  TraST</h1>
+   </div>
+   </header>
+   <section typeof="sa:AuthorsList">
+    <h2>Autorii lucrarii</h2>
+    <div class="autor">
+        <ul>
+            <li typeof="sa:ContributorRole" property="schema:author">
+              <span typeof="schema:Person">
+                <meta property="schema:givenName" content="Catalin">
+                <meta property="schema:additionalName" content="Florin">
+                <meta property="schema:familyName" content="Senegeac">
+                <span property="schema:name">Senegeac Catalin-Florin</span>
+              </span>
+              <ul>
+                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                    <a href="mailto:catalin.senegeac@info.uaic.ro"
+                    property="schema:email">catalin.senegeac@info.uaic.ro</a>
+                </li>
+                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                  <a href="https://www.facebook.com/catalin.senegeac" property="schema:facebook">Facebook</a>
+                </li>
+                <li>
+                    <a>tel: 0744649207</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          
+    </div>
+    <div class="autor">
+        <ul>
+            <li typeof="sa:ContributorRole" property="schema:author">
+              <span typeof="schema:Person">
+                <meta property="schema:givenName" content="Radu">
+                <meta property="schema:additionalName" content="Vasile">
+                <meta property="schema:familyName" content="Poleuca">
+                <span property="schema:name">Poleuca Radu-Vasile</span>
+              </span>
+              <ul>
+                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                  <a href="mailto:radu.poleuca@info.uaic.ro"
+                     property="schema:email">radu.poleuca@info.uaic.ro</a>
+                </li>
+                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                  <a href="https://www.facebook.com/profile.php?id=100006076397894" property="schema:facebook">Facebook</a>
+                </li>
+                <li>
+                    <a>tel: 0749390524</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+    </div>
+  </section>
+  <section typeof="sa:Affiliations">
+      <div class="afiliere">
+        <h2>Afiliere</h2>
+        <ul>
+          <li id="sa">
+            <span typeof="schema:Organization" resource="https://science.ai/">
+              <span property="schema:name">Universitatea Alexandru Ioan Cuza</span>,
+              <span property="schema:parentOrganization">
+                <span typeof="schema:Organization">
+                  <span property="schema:name">Facultatea de informatica</span>
+                  —
+                  <span property="schema:location" typeof="schema:Place">
+                    <span property="schema:address" typeof="schema:PostalAddress">
+                      <span property="schema:addressLocality">Satrada Generala Henri Mathias Berthelot</span>,
+                      <span property="schema:addressRegion">Iasi</span>,
+                      <span property="schema:addressCountry">Roamania</span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+  </section>
+    <img src="diagrama/diagrama(TraST).jpg" class="diagrama"/>
+  <div class="endNotes">
+    <section epub:type="endnotes" role="doc-endnotes"> 
+        <h2>Referinte</h2>
+        <ol>
+<li typeof="schema:WebPage" role="doc-biblioentry"
+    resource="https://developer.mozilla.org/en-US/docs/Web/CSS"
+    property="schema:citation" id="some-id">
+ <cite property="schema:name">
+   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Cascading Style Sheets (CSS)</a>
+ </cite>,
+  de <span property="schema:author" typeof="schema:Person">
+   <span property="schema:site">Mozilla</span>
+ </span>; publicat in
+ <time property="schema:datePublished" datatype="xsd:gYear"
+       datetime="2014">2005</time>
+ <span property="schema:potentialAction" typeof="schema:ReadAction">
+   <meta property="schema:actionStatus" content="CompletedActionStatus">
+ </span>.
+</li>
+<br>
+<li typeof="schema:WebPage" role="doc-biblioentry"
+    resource="http://semver.org/"
+    property="schema:citation" id="some-id">
+ <cite property="schema:name">
+   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Personal Home Page(PHP)</a>
+ </cite>,
+  de <span property="schema:author" typeof="schema:Person">
+   <span property="schema:site">Wikipedia</span>
+ </span>; ultima actulizare in
+ <time property="schema:datePublished" datatype="xsd:gYear"
+       datetime="2014">2020</time>
+ <span property="schema:potentialAction" typeof="schema:ReadAction">
+   <meta property="schema:actionStatus" content="CompletedActionStatus">
+   <time property="schema:endTime" datatype="xsd:date"
+         datetime="2020-06-02">02 Jun 2020</time>
+ </span>.
+</li>
+<br>
+<li typeof="schema:WebPage" role="doc-biblioentry"
+    resource="https://www.php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration.strict"
+    property="schema:citation" id="some-id">
+ <cite property="schema:name">
+   <a href="https://www.php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration.strict">Function arguments (in PHP)</a>
+ </cite>.
+</li> <br>
+<li typeof="schema:WebPage" role="doc-biblioentry"
+    resource="http://toykeeper.net/soapbox/php_problems/"
+    property="schema:citation" id="some-id">
+ <cite property="schema:name">
+   <a href="http://toykeeper.net/soapbox/php_problems/">Problems with PHP</a>
+ </cite>, retrived
+ <time property="schema:datePublished" datatype="xsd:gYear"
+       datetime="2014">2010</time>
+ <span property="schema:potentialAction" typeof="schema:ReadAction">
+   <meta property="schema:actionStatus" content="CompletedActionStatus">
+   <time property="schema:endTime" datatype="xsd:date"
+         datetime="2010-12-20">12 Dec 2010</time>
+ </span>.
+</li>
+        </ol>   
+     </section>
+  <br>
+     <section epub:type="endnotes" role="doc-endnotes"> 
+        <h2>Note finale</h2>
+        <ol>
+          <li role="doc-endnote">
+             Site-ul este un proiect realizat de catre doi studenti de la Facultatea de Informatica din Iasi.
+          </li>
+          <br>
+          <li role="doc-endnote">
+              Toate cunostintele necesare realizarii site-ului sunt luate din cursuri, laboratoare si surse de pe internet. Cateva dintre referinte sunt atasate chiar mai sus.
+          </li>
+          <br>
+          <li role="doc-endnote">
+              Ultima actualizare a ghidului:duminica 07.06.2020. 
+          </li>
+          …
+        </ol>   
+     </section>
+   </div>
+   </body>
+ </html> 

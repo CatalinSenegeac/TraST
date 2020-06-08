@@ -49,8 +49,9 @@ function myFunction() {
 <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
-        <a href="#">Scholarity HTML</a>
-        <a href="#">Diagrams</a>
+        <a href="ghid_utilizare.html">Ghid de utilizare-TraST</a>
+        <a href="raport_frontend-backend.html">Raport-TraST</a>
+        <a href="diagrame.html">Diagrama</a>
     </div>
 </div>
 

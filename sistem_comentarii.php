@@ -1,33 +1,25 @@
 <?php
  include "server.php";
-  function insert_comment($coloana){
-    $db = mysqli_connect("localhost","root","","trastDB");
-    //$db = mysqli_connect("fenrir.info.uaic.ro","trastDB","OTuQEKdt8O","trastDB");
-
-    if (!$db) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
+  function insert_comment($coloana, $db){
    if(isset($_POST['trimite'])){
     $date = date('Y-m-d H:i:s');
     if(isset($_SESSION['email'])){
       $email=$_SESSION['email'];
-      $interogare="SELECT id,nume, prenume FROM utilizatori WHERE email='$email'";
+      $interogare="SELECT nume, prenume FROM utilizatori WHERE email='$email'";
       if($rezultat= mysqli_query($db, $interogare)){
         $row = $rezultat->fetch_assoc();
         $nume = $row['nume'];
         $prenume=$row['prenume'];
-		$id=$row['id'];
     } 
   }
    else{
     $nume="Anonimul";
     $prenume="";
-	$id=0;
    } 
     
     $comentariu = mysqli_real_escape_string($db, $_POST['comentariu']);
     $comentariu_len=strlen($comentariu);
-    $sql="INSERT INTO comments (user_id,id,nume,prenume,$coloana, data_trimitere) VALUES ('$id','','$nume','$prenume', '$comentariu', '$date')";
+    $sql="INSERT INTO comments (id,nume,prenume,$coloana, data_trimitere) VALUES ('','$nume','$prenume', '$comentariu', '$date')";
     if($comentariu_len>500){
        echo "Ati introdus prea multe caractere!!!!";
     }
@@ -38,14 +30,7 @@
   }
     
     
-  function post_comment($coloana){
-    $db = mysqli_connect("localhost","root","","trastDB");
-
-    if (!$db) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-    $db = mysqli_connect("127.0.0.1","root","","trastdb");
-
+  function post_comment($coloana, $db){
     if (!$db) {
         die("Connection failed: " . mysqli_connect_error());
     }

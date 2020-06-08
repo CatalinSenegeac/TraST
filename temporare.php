@@ -100,7 +100,7 @@
 	</form>
 
 	<div class="form-comment">
-    <?php echo" <form action='".insert_comment("temporare")."' method='POST'>" ?>
+    <?php echo" <form action='".insert_comment("temporare",$db)."' method='POST'>" ?>
     <br>
         <h2>Lasati un comentariu!</h2>
         <br>
@@ -111,7 +111,7 @@
     </form>
     <?php
      $coloana="temporare";
-     post_comment($coloana);
+     post_comment($coloana,$db);
     ?>     
    </div>
   

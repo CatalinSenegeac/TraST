@@ -195,7 +195,7 @@
 	</form>
 
 	<div class="form-comment">
-    <?php echo" <form action='".insert_comment("informare")."' method='POST'>" ?>
+    <?php echo" <form action='".insert_comment("informare",$db)."' method='POST'>" ?>
     <br>
         <h2>Lasati un comentariu!</h2>
         <br>
@@ -206,7 +206,7 @@
     </form>
     <?php
      $coloana="informare";
-     post_comment($coloana);
+     post_comment($coloana,$db);
     ?>     
    </div>
 
