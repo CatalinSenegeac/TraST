@@ -107,6 +107,11 @@
         <p class="p1">Folosirea luminilor de intalnire -
             Se amplaseaza pe drumurile publice pe care conducatorul auto trebuie sa puna in functiune luminile de intalnire.</p>
     </div>
+
+    <form method="post" action="capitolTerminat.php">
+		<input class="buton-verif" type="submit" name="progres-aditionale" value="Finalizeaza capitol">  
+	</form>
+
 	<div class="form-comment">
     <?php echo" <form action='".insert_comment("aditionale")."' method='POST'>" ?>
     <br>

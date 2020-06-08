@@ -1,3 +1,7 @@
+body{
+    margin: auto;
+}
+
 .titlu{
     font-size: 25px;
     text-align: center;
@@ -35,10 +39,9 @@
 }
 
 .mini-container:nth-child(2){
-    height: 120px;
+    min-height: 140px;
     margin-top: 0;
     border-top: none;
-    overflow: auto;
     text-align: center;
     display: flex;
     align-items: center;
@@ -92,11 +95,19 @@
     height: 30px;
     width: 40px; 
     vertical-align: middle;
-
 }
 
 .optiune{
     display: inline-block;
-    margin-right: 40px;
-    
+    padding: 10px;
+}
+
+@media only screen and (max-width: 450px) {
+    .corp-chestionar > .mini-container{
+        width: 95%;
+    }
+
+    .optiune{
+        padding: 5px;
+    }
 }

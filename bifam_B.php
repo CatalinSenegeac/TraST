@@ -1,7 +1,7 @@
 <?php
  include 'server.php';
  $index=$_POST['index_id'];
- if($index<27){
+
      $sql_select="SELECT corect, raspunsb FROM intrebari WHERE id=$index";
      if($result=mysqli_query($db,$sql_select)){
         $row=$result->fetch_assoc();
@@ -15,7 +15,7 @@
   else{
     echo" $raspunsb   (incorect!)";
   }
- }
+ 
  
 
 ?>

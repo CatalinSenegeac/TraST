@@ -317,10 +317,7 @@
 		exit;
 	}
 }
-
-header("location: codul_rutier_bun.php");
-		exit;
-   
-    
+	header("location: index.php");
+	exit;
 ?>
 		

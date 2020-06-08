@@ -14,7 +14,7 @@
 <div class="topnav" id="myTopnav">  
       <a href="index.php" >Acasa</a>
       <a href="#"><span style="cursor:pointer" onclick="openNav()">DESPRE</span></a>
-      <a href="#contact.html">Contact</a>
+      <a href="contact.php">Contact</a>
        
        
            <?php if(isset($_SESSION['email'])): ?>

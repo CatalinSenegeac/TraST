@@ -1,0 +1,35 @@
+input[type=text], input[type=password]{
+    display: block;
+    box-sizing: border-box;
+    border:1px solid #ccc;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+}
+
+label{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+form{
+    background-color:white;
+    max-width: 220px;
+    width: auto;
+    min-height: 120px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    border:2px solid rgb(31, 2, 2);
+    padding:16px;
+}
+
+.enter_pass{
+    background-color:green;
+    width: auto;
+    padding:8px 12px;   
+}
+
+button:hover {
+    opacity: 0.8;
+}

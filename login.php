@@ -25,7 +25,7 @@
              <button type="submit" class="logButton" name="log_user">Login</button>
 			 
         
-             <p class="question">Forgot <a href="#">password?</a></p>
+             <p class="question">Forgot <a href="enter_email.php">password?</a></p>
 
             <h3>Click on Register for create an account!</h3>
 

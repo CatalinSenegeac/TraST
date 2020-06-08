@@ -2,6 +2,7 @@
  include "server.php";
   function insert_comment($coloana){
     $db = mysqli_connect("localhost","root","","trastDB");
+    //$db = mysqli_connect("fenrir.info.uaic.ro","trastDB","OTuQEKdt8O","trastDB");
 
     if (!$db) {
         die("Connection failed: " . mysqli_connect_error());

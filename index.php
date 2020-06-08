@@ -94,8 +94,8 @@
       
                 if($rezultat != 1800): ?>
                   
-                 <style> .bar{width:  <?php echo $rezultat/100*5.5; ?>%; } </style>
-                 <?php echo $rezultat/100*5.5 . "%" ; ?>
+                 <style> .bar{width:  <?php echo $rezultat/100*5.55; ?>%; } </style>
+                 <?php echo $rezultat/100*5.55 . "%" ; ?>
                  <?php  else: ?>
              <style> .bar{width: 100%; } </style>
              <?php echo "100% Complet"; ?>
@@ -123,7 +123,7 @@
                              echo $count_user_online['count(*)'] ; ?>
                     </td>
                             
-                   <td rowspan="2">Clasament</td>
+                   <td rowspan="2"><a href="clasament.php">Clasament</a></td>
                    <td>
                         <?php $sql = "SELECT count(*) FROM utilizatori" ;
                               $result = mysqli_query($conn,$sql);

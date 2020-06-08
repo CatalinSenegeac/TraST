@@ -18,17 +18,13 @@
             $("#urmatoarea_intrebare").click(function(){
                 index=index+1;
                 parcurs=parcurs+1;
+				if(index<38){
                 if(index==parcurs){
-                if(index<38){
                 $("#index").load("incarca_index.php",{index_id : index});
                 $("#intrebare").load("incarca_intrebare.php",{index_id : index});
                 $("#raspunsA").load("incarca_raspunsA.php",{index_id : index});
                 $("#raspunsB").load("incarca_raspunsB.php",{index_id : index});
                 $("#raspunsC").load("incarca_raspunsC.php",{index_id : index});
-                }
-                else{
-                    index=index-1;
-                }
                 }
                 else{
                     parcurs=parcurs-1;
@@ -38,7 +34,11 @@
                     $("#raspunsB").load("bifam_B.php",{index_id : index});
                     $("#raspunsC").load("bifam_C.php",{index_id : index});
                     
+                }}
+				else{
+                    index=index-1;
                 }
+                
            });
            $("#alegA").click(function(){
             $("#raspunsA").load("bifam_A.php",{index_id : index});
