@@ -20,11 +20,11 @@
    <div class="titlu">
        <h1>Indicatoare de avertizare</h1>
    </div>
-    
    <div class="spatiu_text1">
         <img src="avertizare/1.png" class="img" >
         <p class="p1">Curba la stanga - Este amplasat la cel mult 200 m de o curba la stanga. Conducatorul trebuie sa circule cu viteza redusa in curbe, iar daca vizibilitatea este redusa, toate manevrele (depasirea, oprirea, stationarea, mersul inapoi, intoarcerea) sunt interzise.</p>
-   </div>
+        
+    </div>
 
    <div class="spatiu_text2">
         <img src="avertizare/2.png" class="img2" >
@@ -249,7 +249,7 @@
 		<input class="buton-verif" type="submit" name="progres-avertizare" value="Finalizeaza capitol">  
 	</form>
 
-	<<div class="form-comment">
+	<div class="form-comment">
     <?php echo" <form action='".insert_comment("avertizare")."' method='POST'>" ?>
     <br>
         <h2>Lasati un comentariu!</h2>
@@ -264,9 +264,7 @@
      post_comment($coloana);
     ?>     
    </div>
-  
    <script type="text/javascript" src="bara-progres.js"></script>
-
 </body>
 </html>
 

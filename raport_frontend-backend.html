@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+     <link rel="stylesheet" type="text/css" href="scholarly.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>raport-TraST</title>
+    <script src="js/scholarly.min.js"></script>
+ </head>
+  <body prefix="schema: http://schema.or">
+   <header>
+     <div class="titlu">
+        <h1> Raport - TraST</h1>
+     </div>  
+   </header>
+   <section typeof="sa:AuthorsList">
+    <h2>Autorii lucrarii</h2>
+    <div class="autor">
+        <ul>
+            <li typeof="sa:ContributorRole" property="schema:author">
+              <span typeof="schema:Person">
+                <meta property="schema:givenName" content="Catalin">
+                <meta property="schema:additionalName" content="Florin">
+                <meta property="schema:familyName" content="Senegeac">
+                <span property="schema:name">Senegeac Catalin-Florin</span>
+              </span>
+              <ul>
+                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                    <a href="mailto:catalin.senegeac@info.uaic.ro"
+                    property="schema:email">catalin.senegeac@info.uaic.ro</a>
+                </li>
+                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                  <a href="https://www.facebook.com/catalin.senegeac" property="schema:facebook">Facebook</a>
+                </li>
+                <li>
+                    <a>tel: 0744649207</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          
+    </div>
+    <div class="autor">
+        <ul>
+            <li typeof="sa:ContributorRole" property="schema:author">
+              <span typeof="schema:Person">
+                <meta property="schema:givenName" content="Radu">
+                <meta property="schema:additionalName" content="Vasile">
+                <meta property="schema:familyName" content="Poleuca">
+                <span property="schema:name">Poleuca Radu-Vasile</span>
+              </span>
+              <ul>
+                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                  <a href="mailto:radu.poleuca@info.uaic.ro"
+                     property="schema:email">radu.poleuca@info.uaic.ro</a>
+                </li>
+                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                  <a href="https://www.facebook.com/profile.php?id=100006076397894" property="schema:facebook">Facebook</a>
+                </li>
+                <li>
+                    <a>tel: 0749390524</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+    </div>
+  </section>
+  <section typeof="sa:Affiliations">
+      <div class="afiliere">
+        <h2>Afiliere</h2>
+        <ul>
+          <li id="sa">
+            <span typeof="schema:Organization" resource="https://science.ai/">
+              <span property="schema:name">Universitatea Alexandru Ioan Cuza</span>,
+              <span property="schema:parentOrganization">
+                <span typeof="schema:Organization">
+                  <span property="schema:name">Facultatea de informatica</span>
+                  —
+                  <span property="schema:location" typeof="schema:Place">
+                    <span property="schema:address" typeof="schema:PostalAddress">
+                      <span property="schema:addressLocality">Satrada Generala Henri Mathias Berthelot</span>,
+                      <span property="schema:addressRegion">Iasi</span>,
+                      <span property="schema:addressCountry">Roamania</span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+  </section>
+  <h2>1.Aplicatia TraST</h2>
+   <p>
+       TraST este o aplicatie construita si bazata pe concepte teoretice ce tin de semnele rutiere. Aplicatia este construita de catre 2 studenti de la informatica din anul II. 
+       Ca si toate aplicatiile web si aceasta are o parte de frontend si un backend. Frontend-ul aplicatiei este lucrat fara niciun fel de framework si se bazeaza pe elemente de 
+       HTML 5. Backend-ul se bazeaza in mare parte pe cod PHP lipsit de librarii ajutatoare dar si de bucati de cod javascript (in putine locuri).
+   </p>   
+   <h2>2.Functionalitatile esentiale ale aplicatiei</h2>
+   <p>
+       TraST este un site functional iar aceste functionalitati pe care le ofera site-ul sunt prezentate mai jos pe capitole. Toate aceste functionalitati se unesc pentru a oferi 
+       utilizatorilor, fie acestia autentificati sau nu, placerea de a naviga pe site. In cele ce urmeaza va voi prezenta aceste functionalitati dupa catogorii. 
+   </p>
+   <h3>2.1 Modul de autentificare</h3>
+ <p class="subcapitol">
+     Pentru a beneficia pe deplin de toate facilitatile pe care le ofera site-ul nostru este necesar sa iti creezi un cont sau in cazul in care detii un cont sa te autentifici cu el. Odata ce esti
+     inregistrat pe site iti poti monitoriza permanent activitatea. Vei putea vedea constant ce progres ai pe site-ul nostru si totodata vei putea vedea care capitole le-ai parcurs pana in momentul actual.
+     Site-ul ofera aceasta functionalitate de a te inregistra. In primul rand este nevoie sa apesi pe butonul "AUTENTIFICARE" iar mai apoi pe butonul "Register" in cazul in care nu aveti un cont deja.
+     Pentru a a-ti face un cont trebuie doar sa introduci cateva date despre tine cum ar fi numele tau, un mail si parola, iar toate acestea se salveaza pe server in baza noastra de date. Atunci cand esti conectat la cont 
+    site-ul va stii acest lucru si iti va monitoriza actiunile pe site. Daca iti faci griji de siguranta parolei pe care o introduci, ei bine, poti sa stai linistit deoarece parola la momentul inregistrarii este criptata cu functia hash md5. Cei care au acces
+    la baza de date pot accesa parola criptata ceea ce va ofera siguranta datelor.
+ </p>
+ <p class="subcapitol">
+     Pe pagina principala a site-ului in partea de jos se poate observa si numarul de utilizatori online in momentul de fata si totodata numarul total de utilizatori inregistrati. Este o functionalitate placuta adusa de catre site deoarece vei stii mereu cati utilizatori 
+     sunteti online in momentul de fata, practic vei stii cati oameni navigheaza pe pagina in acelasi timp cu tine.
+ </p>
+    <h3>2.2 Monitorizarea progresului</h3>
+    <p class="subcapitol">
+        Odata ce esti inregistrat doresti sa stii la orice pas progresul tau. Ei bine site-ul nostru ofera o astfel de functionalitate asadar daca accesezi pagina noastra dupa o perioada indelungata de timp 
+        vei vedea capitolele parcurse in trecut si vei stii care dintre acestea ti-au mai ramas. Aceasta functionalitate este utila in cazul in care esti inregistrat pe site, in caz negativ site-ul nu va retine 
+        aspectele despre progres. Vei fi atentionat la fiecare capitol ca pentru a inregistra un progres este nevoie de autentificare asadar cel mai bine este sa faci acest lucru. Aveti pe pagina principala o vara care se incarca 
+        si se coloreaza cu verde, oferind astfel o senzatie placuta utilizatorilor, atunci cand parcurgeti cate un capitol. De asemenea aveti cate o astfel de bara si la indicatoarele rutiere. Pentru codul rutier, in schimb, la finalizarea capitolelor 
+        in dreptul numelui capitolului va aparea semnul bifat.
+    </p>
+    <p class="subcapitol">
+        In spatele acestor functionalitati care ofera senzatia de animatie, de fapt, dupa terminarea unui capitol se salveaza in baza de date procentajul capitolului din totalul stabilit. In cazul acesta odata ce ai parcurs un capitol se poate spune ca ai parcurs x% din total.
+        Se actualizeaza acest procentaj si se adauga de fiecare data la acea bara de pe pagina principala care atentioneaza utilizatorul cat la suta mai are pana sa termine de parcus tot site-ul nostru.   
+    </p>
+    <p class="subcapitol">
+        TraST ofera si un clasament a utilizatorilor. Deci odata ce parcurgi mai mult vei putea aparea in clasamentul site-ului. Acest lucru se face interogand baza de date si afland numele utilizatorilor care au cel mai mare punctaj. Clasamentul se poate schimba in functie de 
+        progresul inregistrat. Oricand se pot schimba persoanele aflate pe primele locuri in clasament. Totodata se poate descarca oricand un fisier csv cu clasamentul actualizat.
+    </p>
+    <h3>2.3 Sistemul de comentarii</h3>
+    <p class="subcapitol">
+        Daca accesati paginile dedicate semneleor rutiere la finalul fiecarui capitol de semne veti putea observa o sectiune dedicata persoanelor care doresc sa lase un comentariu pentru categoria respectiva. Acest lucru este util in cazul in care aveti o intrebare referitoare la un semn anume.
+        Toti utilizatorii nostrii au dreptul la aceasta functionalitate. Cei care nu sunt inregistrati/conectati pe site pot lasa un comentariu doar ca numele lor vor fi "Anonimul" in timp ce un utilizator conectat la contul sau TraSt va avea drept nume la comentarii numele din baza de date a contului sau. Pe langa nume si comentariile lasate,
+        site-ul afiseaza si ora si data in care utilizatorul a lasat comentariul.
+    </p>
+    <p class="subcapitol">
+        Acest sitem de comentarii este creat astfel incat de fiecare data cand un utilizator trimite un comentariu acesta sa fie salvat in baza noastra de date. Pe langa comentariul propriu zis se va stoca in baza de date numele, ora, data si categoria de semne unde respectivul a lasat comentariul. Comentariile pot fi sterse doar de catre administrator asa ca aveti grija 
+        la ce spuneti pe site, uneori poate o sa regretati mai tarziu.
+    </p>
+    <h3>2.4 Sistemul de chestionare</h3>
+    <p class="subcapitol">
+        La final dupa ce ati parcurs toata materia important ar fi sa apelati si la chestionarul special conceput pentru aprofundarea aspectelor teoretice prezentate pe site. Am spus la final deoarece este important sa nu va apucati de acesta pana nu sunteti siguri ca ati inteles partea teoretica. 
+        Este usor de inteles cum functioneaza, aveti 37 de intrebari cu trei variante de raspuns dar cu raspuns unic. Pentru a raspunde la o intrebare este suficient sa alegi una din variante (care crezi tu ca e corecta) iar imediat dupa o sa va apara in dreptul raspunsului daca acesta este sau nu raspunsul corect.
+        Poti sa te intorci la o intrebare anterioara daca doresti sa mai vizualizezi o data variantele de raspuns si corectitudinea acestora. Acest chestionar nu este unul clasic pentru scolile de soferi ci este unul dedicat aprofundarii si recapitularii materialelor teoretice prezentate.
+    </p>
+    <p class="subcapitol">
+        In spatele acestui chestionar de afla de fapt o baza de date in care sunt stocate 37 de intrebari. De fiecare data ordinea intrebarilor este aceasi pentru fiecare utilizator in parte. Cand se apasa pe butonul de "Trimite raspuns" se va incarca prin intermediul unor scripturi php  urmatoarea intrebare din baza de date. Atunci cand vom apasa pe unul din raspunsurile A, B sau C se va apela baza de date sa ne ofere 
+        raspunsul corect pentru intrebarea corecta iar in functie de acest raspuns in dreptul raspunsului ales va aparea corectitudinea acestuia. 
+    </p>
+    <h3>2.5 Managementul paginii </h3>
+    <p class="subcapitol">
+        Administratorul paginii are drepturi suplimentare fata de utilizatorii obisnuiti. Acesta are dreptul sa editeze site-ul, sa adauge continut nou sua sa stearga comentariile din baza de date.
+    </p>
+   
+    <h2>3.Progresul proiectului</h2>
+    <p>
+        Proiectul a progresat treptat. Ambii participati ce s-au ocupat cu dezvoltarea acestuia au contribuit atat la partea de front-end cat si la partea de back-end in mod egal. Proiectul a fost realizat prin munca in echipa, comunicare clara si suport moral la intalnirea dificultatilor.
+        In cele ce urmeaza voi prezenta contributiile fiecarui membru atat pe partea de front-end cat si pe partea de back-end
+    </p>
+    <h3>1.Front-end</h3>
+    <h3>a)Poleuca Radu-Vasile</h3>
+    <p class="subcapitol">
+       Pe partea de front-end s-a ocupat de pagina principala, de paginile specifice codului rutier si de pagina specifica chestionarului. In special a lucrat si la partea ce face site-ul responsive pe fiecare dintre paginile web a site-ului.
+    </p>
+    <h3>b)Senegeac Catalin-Florin</h3>
+    <p class="subcapitol">
+        Pe partea de front-end s-a ocupat de paginile ce tin de semnele rutiere, de pagina pentru autentificare si pagina pentru inregistrare. A schimbat amanunte si din elementele paginii dedicate chestionarului si a realizat interfata de lasat comentarii. A realizat si cele 2 rapoarte (cel cu ghidul aplicatiei si acesta).
+    </p>
+    <br>
+    <h3>2.Back-end</h3>
+    <h3>a)Poleuca Radu-Vasile</h3>
+    <p class="subcapitol">
+        Pe partea de back-end a lucrat la sistemul de login/register, la monitorizarea continua a progresului, la clasament si utilizatori online din numarul de utilizatori inregistrati.
+    </p>
+    <h3>b)Senegeac Catalin-Florin</h3>
+    <p class="subcapitol">
+        Pe partea de back-end a lucrat la sistemul de comentarii si la sistemul de chestionare.
+    </p>
+    <p>
+        Dupa cm spuneam, proiectul a progresat treptat. Fiecare problema intalnita a fost rezolvata fie de cel responsabil pentru acel task, fie impreuna in cazul in care problema era una mai serioasa.
+        Proiectul a progresat mai repede in ultimele saptamani mai ales de cand am simtit ca se apropie data de predare.
+    </p>
+
+   <h2>4.Motivatie</h2>
+   <h3>4.1 De ce am ales acest proiect?</h3>
+   <p class="subcapitol">
+       TraST la prima vedere pare a fi un site dedicat adolescentilor care doresc sa urmeze un curs/tutorial cu si despre semnele rutiere. Nu doar ca pare ci chiar asta si este (dar evident, daca in mare parte sunt adolescenti asta nu inseamna ca persoanele adulte nu vor fi interesate de acest site). Avand in vedere ca am trecut, atat eu cat si colegul meu prin 
+       perioada aceasta de adolescenta, in care umblam pentru a obtine permisul auto. Am fost de comun acord ca acest proiect ne va starni amintiri ale acelor timpuri si totodata avem informatii actuale ale codului rutier si de ce nu sa vedem in atat de putin timp cate 
+       reguli s-au schimbat. Pe scurt, eram convinsi ca acest proiect (aceasta tematica) ne va motiva sa muncim sa-l finalizam.
+   </p>
+   <h3>4.2 De ce acest aspect al site-ului?</h3>
+   <p class="subcapitol">
+       Dupa cum am spus-o de-a lungul raportului sau in ghidul aplicatiei noi am dorit ca site-ul nostru sa fie usor de inteles de catre orice utilizator care acceseaza pagina. Structura este una simpla iar site-ul se poate parcurge cap coada usor si repede. Avand in vedere ca nu cere inregistrarea obligatorie pe site asta face site-ul sa fie usor de navigat chiar si de catre o persoana in 
+       varsta pe care nu-l intereseaza sa aibe un cont pe site ci doreste doar sa se informeze ce e nou in raport cu semnele rutiere si codul rutier.
+   </p>
+   <p class="subcapitol">
+       Culorile folosite sunt calde si placute. Nuantele nu sunt unele care sa "sara in ochi" iar modul prin care comunica acestea este unul pasnic si relaxant nu dauneaza ochiului sau provoaca discomfort.
+       Pe scurt TraST doreste a fi un site in favoarea utilizatorului prin acest aspect. Nu am folosit prea multe culori iar cele alese se potrivesc tematicii.
+   </p>
+   <div class="endNotes">
+    <section epub:type="endnotes" role="doc-endnotes"> 
+        <h2>Referinte</h2>
+        <ol>
+<li typeof="schema:WebPage" role="doc-biblioentry"
+    resource="https://developer.mozilla.org/en-US/docs/Web/CSS"
+    property="schema:citation" id="some-id">
+ <cite property="schema:name">
+   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Cascading Style Sheets (CSS)</a>
+ </cite>,
+  de <span property="schema:author" typeof="schema:Person">
+   <span property="schema:site">Mozilla</span>
+ </span>; publicat in
+ <time property="schema:datePublished" datatype="xsd:gYear"
+       datetime="2014">2005</time>
+ <span property="schema:potentialAction" typeof="schema:ReadAction">
+   <meta property="schema:actionStatus" content="CompletedActionStatus">
+ </span>.
+</li>
+<br>
+<li typeof="schema:WebPage" role="doc-biblioentry"
+    resource="http://semver.org/"
+    property="schema:citation" id="some-id">
+ <cite property="schema:name">
+   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Personal Home Page(PHP)</a>
+ </cite>,
+  de <span property="schema:author" typeof="schema:Person">
+   <span property="schema:site">Wikipedia</span>
+ </span>; ultima actulizare in
+ <time property="schema:datePublished" datatype="xsd:gYear"
+       datetime="2014">2020</time>
+ <span property="schema:potentialAction" typeof="schema:ReadAction">
+   <meta property="schema:actionStatus" content="CompletedActionStatus">
+   <time property="schema:endTime" datatype="xsd:date"
+         datetime="2020-06-02">02 Jun 2020</time>
+ </span>.
+</li>
+<br>
+<li typeof="schema:WebPage" role="doc-biblioentry"
+    resource="https://www.php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration.strict"
+    property="schema:citation" id="some-id">
+ <cite property="schema:name">
+   <a href="https://www.php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration.strict">Function arguments (in PHP)</a>
+ </cite>.
+</li> <br>
+<li typeof="schema:WebPage" role="doc-biblioentry"
+    resource="http://toykeeper.net/soapbox/php_problems/"
+    property="schema:citation" id="some-id">
+ <cite property="schema:name">
+   <a href="http://toykeeper.net/soapbox/php_problems/">Problems with PHP</a>
+ </cite>, retrived
+ <time property="schema:datePublished" datatype="xsd:gYear"
+       datetime="2014">2010</time>
+ <span property="schema:potentialAction" typeof="schema:ReadAction">
+   <meta property="schema:actionStatus" content="CompletedActionStatus">
+   <time property="schema:endTime" datatype="xsd:date"
+         datetime="2010-12-20">12 Dec 2010</time>
+ </span>.
+</li>
+        </ol>   
+     </section>
+  <br>
+     <section epub:type="endnotes" role="doc-endnotes"> 
+        <h2>Note finale</h2>
+        <ol>
+          <li role="doc-endnote">
+             Site-ul este un proiect realizat de catre doi studenti de la Facultatea de Informatica din Iasi.
+          </li>
+          <br>
+          <li role="doc-endnote">
+              Toate cunostintele necesare realizarii site-ului sunt luate din cursuri, laboratoare si surse de pe internet. Cateva dintre referinte sunt atasate chiar mai sus.
+          </li>
+          <br>
+          <li role="doc-endnote">
+              Ultima actualizare: duminica 07.06.2020. 
+          </li>
+          …
+        </ol>   
+     </section>
+   </div>
+   </body>
+ </html> 

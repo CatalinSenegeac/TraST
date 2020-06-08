@@ -110,7 +110,6 @@
         <section id="about">
             <h2>DESPRE SITE</h2>
             <p> &nbsp &nbsp &nbsp  &nbsp Wei De a fost atât de mândru că Bai Guizhi Guan Ju s-a ridicat din greșeală în cea de-a unsprezecea recenzie după întoarcere. Aceasta este povestea de mai târziu, și cu cât este mai enervant și mai enervant ", a regretat și el. A spus: Tatăl a mărturisit lui Yayan "Transpir ca ploaia" Ji'an a venit la Guan Juyu, fără îndoială. Acestea sunt cuvintele ulterioare pe care le duce Raoer, cu cât sunt mai enervat, mai enervat și regret. Cuvinte. Cu cât ascultam, cu atât eram mai enervat și nu puteam să nu regret. Aceasta este povestea ulterioară. Rao va merge. „Plecând de la Guan Juer înseamnă„ „. ： Îți poți asculta urechile. Puteți să vă lăsați urechile afară, dar este în regulă. ”Raoer du-te.” Cu cât mai enervant și mai enervat, nu-l regret. Este o poveste ulterioară.寲 ". Este o chestiune de timp. Se poate vedea. Se poate spune că urechea merge la Guan Yi. Se poate spune că nu este lăudată. Urechea a spus: M-am întors și sunt fericit, dar nu imoral." Spune: „E în regulă să testezi mașina”</p>
-
         </section>
 
         <section class="contor">
@@ -141,7 +140,6 @@
            </table>
         </section>
      </div>
-
     <script type="text/javascript" src="index.js"></script>
 
     </body>
