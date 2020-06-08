@@ -28,7 +28,7 @@
         <p class="p1">Presemnalizarea directiilor la o intersectie de drumuri din afara localitatii - Este instalat la 100-200 m de o intersectie de drumuri. In general, se instaleaza la intersectii de drumuri judetene, nationale sau la intersectii de drumuri nationale cu drumuri judetene.</p>
     
        </div>
-       <div class="curbaD">
+       <div class="spatiu_text2">
         <img src="orientare/2.jpg" class="img2" >
         
         <p class="p2">Presemnalizarea directiilor indicate - Poate fi intalnit in afara localitatilor, la 100-200 m de o intersectie. Are rolul de a informa conducatorul auto despre diferitele trasee pe care le poate urma.</p>

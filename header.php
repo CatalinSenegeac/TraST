@@ -12,6 +12,9 @@
 <div id="logo"><img src="imagini/logooo.png" id="imagine-logo"></div>
 
 <div class="topnav" id="myTopnav">  
+      <?php if(isset($_SESSION['email']) && $_SESSION['email'] == "raducupoleuca@yahoo.com"): ?>
+        <a href="admin.php" >Admin</a>
+      <?php endif; ?>
       <a href="index.php" >Acasa</a>
       <a href="#"><span style="cursor:pointer" onclick="openNav()">DESPRE</span></a>
       <a href="contact.php">Contact</a>

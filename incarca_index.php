@@ -1,4 +1,4 @@
 <?php
   $index=$_POST['index_id'];
-    echo"<h3> Intrebarea $index/37</h3>";  
+    echo"<h3> Intrebarea $index/38</h3>";  
 ?>

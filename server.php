@@ -77,12 +77,12 @@ session_start(); // ready to go!
 
         if(count($errors) == 0)
         {
-
+            $date = date('Y/m/d');
             //generare vkey
             $vkey = md5(time().$nume);
 
             $parola = md5($parola);
-            $sql = "INSERT INTO utilizatori (nume,prenume,email,parola,verified,vkey) VALUES ('$nume','$prenume','$email','$parola',0,'$vkey')";
+            $sql = "INSERT INTO utilizatori (nume,prenume,email,parola,verified,vkey,data_inreg) VALUES ('$nume','$prenume','$email','$parola',0,'$vkey','$date')";
             $query0 = mysqli_query($db,$sql);
 
             $sql2 = "SELECT id FROM utilizatori WHERE email='$email'";
@@ -90,7 +90,7 @@ session_start(); // ready to go!
             $result = $query2->fetch_assoc(); 
             $rezultat = $result['id'];
 
-            $query3 = "INSERT INTO users_progress VALUES ('$rezultat',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)";
+            $query3 = "INSERT INTO users_progress VALUES ('$rezultat',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)";
             mysqli_query($db,$query3);
 
             $_SESSION['nume'] = $nume;

@@ -24,18 +24,23 @@
                 <th>Progres</th>
             </tr>
             <?php
-                $sql = "SELECT nume,prenume,progres_total FROM utilizatori join users_progress on utilizatori.id=users_progress.user_id ORDER BY progres_total desc";
+                $email_admin = "raducupoleuca@yahoo.com";
+                $sql = "SELECT nume,prenume,progres_total FROM utilizatori join users_progress on utilizatori.id=users_progress.user_id WHERE email <> '$email_admin' ORDER BY progres_total desc";
                 $query = mysqli_query($conn, $sql); 
                 
                 $count = 1;
                 while($row = mysqli_fetch_array($query)){
+                    if($row['progres_total'] == 2400)
+                        $total = 100;
+                    else
+                        $total = $row['progres_total']/100*4;
                     echo  "
                         <tr>
                             <td>".$count."</td>
                             <td>".$row['nume']."</td>
                             <td>".$row['prenume']."</td>
-                            <td>".$row['progres_total']. "/1800 </td>
-                            <td>".$row['progres_total']/100*5.55 . "%
+                            <td>".$row['progres_total']. "/2400</td>
+                            <td>". $total . "% </td>
                         </tr>";  $count++;   }
             ?>
             </table>

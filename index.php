@@ -84,7 +84,7 @@
             {
                 // calculez progresul total -> pentru bara de progres
                 $id = return_id();
-                $sql = "SELECT progres_avertizare + progres_prioritate + progres_interzicere + progres_temporare + progres_orientare + progres_obligare + progres_informare + progres_aditionale + progres_dgenerale + progres_vehicule + progres_conducatorii + progres_semnalizare + progres_reguli + progres_infractiuni + progres_raspunderea + progres_cai + progres_atributii + progres_dfinale AS total FROM users_progress WHERE user_id='$id'";
+                $sql = "SELECT progres_avertizare + progres_prioritate + progres_interzicere + progres_temporare + progres_orientare + progres_obligare + progres_informare + progres_aditionale + progres_dgenerale + progres_vehicule + progres_conducatorii + progres_semnalizare + progres_reguli + progres_infractiuni + progres_raspunderea + progres_cai + progres_atributii + progres_dfinale + progres_chestionar AS total FROM users_progress WHERE user_id='$id'";
                 $query = mysqli_query($conn, $sql); 
                 $result = $query->fetch_assoc(); 
                 $rezultat = $result['total'];
@@ -92,10 +92,10 @@
                 $sql2    = "UPDATE users_progress SET progres_total='$rezultat' WHERE user_id='$id'"; 
                 $query2 = mysqli_query($conn, $sql2); 
       
-                if($rezultat != 1800): ?>
+                if($rezultat != 2400): ?>
                   
-                 <style> .bar{width:  <?php echo $rezultat/100*5.55; ?>%; } </style>
-                 <?php echo $rezultat/100*5.55 . "%" ; ?>
+                 <style> .bar{width:  <?php echo $rezultat/100*4; ?>%; } </style>
+                 <?php echo $rezultat/100*4 . "%" ; ?>
                  <?php  else: ?>
              <style> .bar{width: 100%; } </style>
              <?php echo "100% Complet"; ?>
@@ -171,6 +171,20 @@ if(isset($_SESSION['email']))
     if($rezultat3 == 1000): ?>
         <style> .buton-reset {z-index: 1;} .box:hover #btn-reset-2{ display: block; } </style>
     <?php  endif; 
+
+    // daca chestionarul a fost completat (600), apare optiunea de resetare
+
+    $id4 = return_id();
+    $sql4 = "SELECT progres_chestionar AS total_chestionar FROM users_progress WHERE user_id='$id'";
+    $query4 = mysqli_query($conn, $sql4); 
+    $result4 = $query4->fetch_assoc(); 
+    $rezultat4 = $result4['total_chestionar'];
+     
+    if($rezultat4 == 600): ?>
+        <style> .buton-reset {z-index: 1;} .box:hover #btn-reset-3{ display: block; } </style>
+    <?php  endif; 
+    
+        
     } 
 ?>
 

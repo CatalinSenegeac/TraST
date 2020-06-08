@@ -316,6 +316,24 @@
 		header("location: codul_rutier_bun.php");
 		exit;
 	}
+	else
+		if(isset($_POST['finalizare-chestionar'])) {
+         
+		$sql2 = "SELECT progres_chestionar FROM users_progress WHERE user_id='$rezultat1'";
+		$result = mysqli_query($conn, $sql2); 
+		$count  = mysqli_num_rows($result); 
+
+		if ($count == "0") { 
+			$sql3    = "INSERT INTO users_progress (user_id, progres_chestionar) VALUES('$rezultat1', 600)"; 
+			$result3 = mysqli_query($conn, $sql3);
+		} else {
+			$sql4    = "UPDATE users_progress SET progres_chestionar=600 WHERE user_id='$rezultat1'"; 
+			$result4 = mysqli_query($conn, $sql4); 
+		}
+		header("location: index.php");
+		exit;
+	}
+	
 }
 	header("location: index.php");
 	exit;

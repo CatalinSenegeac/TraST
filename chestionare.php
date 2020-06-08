@@ -18,7 +18,7 @@
             $("#urmatoarea_intrebare").click(function(){
                 index=index+1;
                 parcurs=parcurs+1;
-				if(index<38){
+				if(index<39){
                 if(index==parcurs){
                 $("#index").load("incarca_index.php",{index_id : index});
                 $("#intrebare").load("incarca_intrebare.php",{index_id : index});
@@ -37,6 +37,10 @@
                 }}
 				else{
                     index=index-1;
+                }
+                
+                if(index==38){
+                    $("#progres").load("progres_chestionar.php");
                 }
                 
            });
@@ -79,7 +83,7 @@
 
             <div class="mini-container" id="index">
 
-                <h3> Intrebarea 1/37</h3>
+                <h3> Intrebarea 1/38</h3>
 
             </div>
            
@@ -106,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="mini-container">
+            <div class="mini-container" id="progres">
             <div class="optiune">
               <button id="intrebarea_anterioara"> Intrebarea anterioara </button>
              </div>
@@ -122,6 +126,7 @@
              <div class="optiune">
               <button id="urmatoarea_intrebare"> Intrebarea urmatoare </button>
              </div>
+             
                         
             </div>   
             

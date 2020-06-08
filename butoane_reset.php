@@ -22,6 +22,15 @@
             header("location: index.php");
 		    exit;
         }
+
+        if(isset($_POST['buton3'])) 
+        {
+            $sql5   = "UPDATE users_progress SET progres_chestionar = 0 WHERE user_id='$id4'"; 
+            $query5 = mysqli_query($conn, $sql5); 
+            header("location: index.php");
+            exit;
+            
+        }
     }
 
 ?>
